@@ -1,0 +1,51 @@
+name: Retrain Nutrify Model
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 5 * * 1"
+
+jobs:
+  retrain:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r training/requirements.txt
+
+      - name: Export data from Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          SUPABASE_STORAGE_BUCKET: ${{ secrets.SUPABASE_STORAGE_BUCKET }}
+          EXPORT_STATUS: approved
+        run: python training/data_export.py
+
+      - name: Train model
+        env:
+          WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
+          WANDB_PROJECT: foodsnap
+          DATA_DIR: training/data/images
+          MODEL_OUT_DIR: training/models
+          EPOCHS: 10
+        run: python training/train.py
+
+      - name: Export to ONNX
+        env:
+          MODEL_PATH: training/models/latest.pth
+          NUM_CLASSES: 100
+        run: python training/export.py
+
+      - name: Upload ONNX to R2 (placeholder)
+        run: |
+          echo "Upload training/onnx/foodvision_quant.onnx to your model storage."
+          echo "Update apps/web/public/model-config.json with the new URL."

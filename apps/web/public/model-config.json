@@ -1,0 +1,6 @@
+{
+  "foodVision": "/models/foodvision_quant.onnx",
+  "foodGate": "/models/food_not_food.onnx",
+  "inputSize": 240,
+  "gateSize": 224
+}

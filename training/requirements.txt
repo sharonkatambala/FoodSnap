@@ -1,0 +1,9 @@
+torch
+torchvision
+timm
+wandb
+supabase
+onnx
+onnxruntime
+pillow
+numpy
