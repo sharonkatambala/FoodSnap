@@ -39,11 +39,29 @@ nav{
   border-bottom:1px solid var(--border);
 }
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text)}
-.logo-icon{width:auto;height:auto;display:flex;align-items:center;justify-content:center;font-size:30px;flex-shrink:0;line-height:1;filter:drop-shadow(0 8px 12px rgba(198,74,103,.18))}
-.logo-text{font-family:var(--font-d);font-weight:700;font-size:1.45rem;letter-spacing:-.035em;display:inline-flex;align-items:baseline;gap:2px;line-height:1}
-.logo-food{color:#231f20}
-.logo-snap{color:#c62828;position:relative}
-.logo-snap::after{content:"";position:absolute;left:2px;right:0;bottom:-3px;height:7px;background:linear-gradient(90deg,rgba(198,40,40,.2),rgba(244,143,177,.05));border-radius:999px;z-index:-1}
+.brand-lockup{
+  display:inline-flex;align-items:center;gap:12px;
+  text-decoration:none;color:inherit;line-height:1;flex-shrink:0;
+}
+.brand-icon-svg{
+  width:38px;height:38px;display:block;flex-shrink:0;
+  filter:drop-shadow(0 12px 22px rgba(34,76,52,.16));
+}
+.brand-wordmark{
+  display:inline-flex;align-items:baseline;gap:1px;
+  font-family:var(--font-b);font-size:1.55rem;letter-spacing:-.05em;line-height:.96;
+}
+.brand-word{font-weight:800;color:#183020}
+.brand-ai{
+  font-weight:800;
+  background:linear-gradient(135deg,#f0a15e 0%,#d56b31 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  text-shadow:0 6px 18px rgba(213,107,49,.12);
+}
+.brand-footer .brand-icon-svg{width:34px;height:34px}
+.brand-footer .brand-wordmark{font-size:1.28rem}
+.brand-shell .brand-icon-svg{width:34px;height:34px}
+.brand-shell .brand-wordmark{font-size:1.3rem}
 .nav-links{display:flex;align-items:center;gap:4px}
 .nl{padding:8px 16px;color:var(--text2);text-decoration:none;font-size:.875rem;font-weight:500;border-radius:100px;transition:.2s}
 .nl:hover{color:var(--text);background:var(--cream2)}
@@ -453,8 +471,6 @@ footer{background:var(--white);border-top:1px solid var(--border);padding:44px 4
 .footer-inner{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px}
 .footer-left{}
 .footer-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);margin-bottom:8px}
-.footer-logo-icon{font-size:22px}
-.footer-logo-text{font-size:1.1rem}
 .footer-copy{font-size:.8rem;color:var(--text3)}
 .footer-links{display:flex;gap:24px;flex-wrap:wrap}
 .flink{font-size:.82rem;color:var(--text3);text-decoration:none;transition:.2s;font-weight:500}

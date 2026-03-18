@@ -4,17 +4,14 @@ import FoodSnapNutridexSection from "../components/FoodSnapNutridexSection";
 import FoodSnapStatsSection from "../components/FoodSnapStatsSection";
 import FoodSnapDiarySection from "../components/FoodSnapDiarySection";
 import HeroStatsStrip from "../components/HeroStatsStrip";
+import BrandLogo from "../components/BrandLogo";
 
 export default function Page() {
   return (
     <>
       <nav>
         <a className="logo" href="#top">
-          <span className="logo-icon" aria-hidden="true">{"\u{1F353}"}</span>
-          <span className="logo-text">
-            <span className="logo-food">Lishe</span>
-            <span className="logo-snap">AI</span>
-          </span>
+          <BrandLogo size="nav" />
         </a>
         <div className="nav-links">
           <a className="nl" href="#scan">Scan</a>
@@ -172,11 +169,7 @@ export default function Page() {
         <div className="footer-inner">
           <div className="footer-left">
             <a href="#" className="footer-logo">
-              <span className="logo-icon footer-logo-icon" aria-hidden="true">{"\u{1F353}"}</span>
-              <span className="logo-text footer-logo-text">
-                <span className="logo-food">Lishe</span>
-                <span className="logo-snap">AI</span>
-              </span>
+              <BrandLogo size="footer" />
             </a>
             <div className="footer-copy">© 2026 Lishe AI. AI-powered food intelligence.</div>
           </div>

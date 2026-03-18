@@ -1,4 +1,5 @@
-﻿import Link from "next/link";
+import Link from "next/link";
+import BrandLogo from "./BrandLogo";
 
 type SiteHeaderProps = {
   className?: string;
@@ -19,12 +20,9 @@ export default function SiteHeader({ className }: SiteHeaderProps) {
         className ?? ""
       }`}
     >
-      <div className="flex items-center gap-3">
-        <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-500 text-2xl text-white shadow">
-          {"\u{1F353}"}
-        </span>
+      <div className="flex items-center gap-4">
         <div>
-          <p className="text-sm font-semibold text-slate-900">Lishe AI</p>
+          <BrandLogo size="shell" />
           <p className="text-xs text-slate-500">Track meals, goals, and your Nutridex.</p>
         </div>
       </div>
