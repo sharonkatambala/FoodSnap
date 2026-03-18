@@ -377,6 +377,11 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
   display:flex;align-items:center;justify-content:center;
   font-size:5rem;position:relative;overflow:hidden;
 }
+.diary-card-image{
+  width:100%;height:100%;display:block;
+  object-fit:contain;object-position:center;
+  padding:10px;background:#fff;
+}
 .diary-card-thumb::after{
   content:'';position:absolute;inset:0;
   background:linear-gradient(180deg,transparent 60%,rgba(0,0,0,.15) 100%);

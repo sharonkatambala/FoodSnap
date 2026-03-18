@@ -44,7 +44,7 @@ export default function FoodSnapDiarySection() {
             <div key={entry.id} className="diary-card">
               <div className="diary-card-thumb">
                 {entry.image_data_url ? (
-                  <img src={entry.image_data_url} alt={entry.food} style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "18px" }} />
+                  <img src={entry.image_data_url} alt={entry.food} className="diary-card-image" />
                 ) : (
                   getFoodEmoji(entry.food)
                 )}
