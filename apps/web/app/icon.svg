@@ -2,37 +2,35 @@
   <rect width="128" height="128" rx="30" fill="#FAF6EE" />
   <g filter="url(#shadow)">
     <path
-      d="M66.76 31.22c18.92 0 34.99 15.02 34.99 36.67 0 22.87-16.92 38.51-39.53 38.51-21 0-36.37-14.85-36.37-36.87 0-21.12 15.95-38.31 36.57-38.31 1.86 0 2.91 0 4.34 0Z"
+      d="M65.32 31.72c15.76 0 28.39 5.01 36.54 14.49 7.56 8.8 10.08 20.24 7.19 31.44-4.75 18.38-21.2 30.85-40.26 30.85-11.42 0-21.65-4.08-29.27-11.48-15.45-15.03-15.65-39.34-.38-54.66 7.46-7.5 17.24-11.65 26.18-11.65Z"
       fill="url(#fruit)"
     />
     <path
-      d="M62.29 32.51c8.95-6.05 15.47-15.02 16.84-21.89 7.28 3.7 10.67 8.98 10.67 15.16-4.66 2.95-12.59 5.89-24.01 6.62l-3.5.11Z"
+      d="M63.84 31.12c3.1-10.31 10.42-17.67 21.23-21.12-.35 10.12-6.5 17.82-18.94 23.12l-2.29-2Z"
       fill="url(#leaf)"
     />
     <path
-      d="M53.74 25.92c-6-4.32-11.68-6.19-17.63-6.08 1.94 6.63 7.09 12.02 14.72 16.48l2.91-10.4Z"
-      fill="#7CAE67"
+      d="M43.82 73.54c8.01-10.98 18.58-16.35 31.41-16.35 7.3 0 14.22 1.83 20.55 5.57"
+      stroke="#F6F1E8"
+      stroke-width="4.6"
+      stroke-linecap="round"
     />
-    <circle cx="86.1" cy="71.27" r="14.12" fill="url(#accent)" />
+    <circle cx="97.3" cy="61.99" r="8.19" fill="#D88947" />
     <path
-      d="M66.76 31.22c18.92 0 34.99 15.02 34.99 36.67 0 22.87-16.92 38.51-39.53 38.51-21 0-36.37-14.85-36.37-36.87 0-21.12 15.95-38.31 36.57-38.31 1.86 0 2.91 0 4.34 0Z"
+      d="M65.32 31.72c15.76 0 28.39 5.01 36.54 14.49 7.56 8.8 10.08 20.24 7.19 31.44-4.75 18.38-21.2 30.85-40.26 30.85-11.42 0-21.65-4.08-29.27-11.48-15.45-15.03-15.65-39.34-.38-54.66 7.46-7.5 17.24-11.65 26.18-11.65Z"
       stroke="#204432"
       stroke-opacity=".12"
       stroke-width="2.4"
     />
   </g>
   <defs>
-    <linearGradient id="fruit" x1="29" y1="27" x2="97" y2="99" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#5C9B67" />
-      <stop offset="1" stop-color="#224C34" />
+    <linearGradient id="fruit" x1="40" y1="28" x2="101" y2="97" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4E8C60" />
+      <stop offset="1" stop-color="#27513C" />
     </linearGradient>
-    <linearGradient id="leaf" x1="61" y1="8" x2="81" y2="34" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#B9D989" />
-      <stop offset="1" stop-color="#64945A" />
-    </linearGradient>
-    <linearGradient id="accent" x1="78" y1="58" x2="98" y2="83" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F3C58C" />
-      <stop offset="1" stop-color="#D6783A" />
+    <linearGradient id="leaf" x1="62" y1="11" x2="88" y2="38" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B7D787" />
+      <stop offset="1" stop-color="#6D9D5D" />
     </linearGradient>
     <filter id="shadow" x="17" y="10" width="93" height="105" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix" />
