@@ -1,49 +1,33 @@
-import { useId } from "react";
-
 type BrandLogoProps = {
   size?: "nav" | "footer" | "shell";
   className?: string;
 };
 
 export default function BrandLogo({ size = "nav", className = "" }: BrandLogoProps) {
-  const id = useId().replace(/:/g, "");
-  const fruitGradientId = `${id}-fruit`;
-  const leafGradientId = `${id}-leaf`;
-
   return (
     <span className={`brand-lockup brand-${size} ${className}`.trim()} aria-label="LisheAI">
       <svg className="brand-icon-svg" viewBox="0 0 64 64" aria-hidden="true">
-        <defs>
-          <linearGradient id={fruitGradientId} x1="17" y1="12" x2="48" y2="50" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stopColor="#4E8C60" />
-            <stop offset="1" stopColor="#27513C" />
-          </linearGradient>
-          <linearGradient id={leafGradientId} x1="28" y1="4" x2="43" y2="18" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stopColor="#B7D787" />
-            <stop offset="1" stopColor="#6D9D5D" />
-          </linearGradient>
-        </defs>
         <path
-          d="M32.3 14.5c8.1 0 14.6 2.6 18.8 7.6 4 4.7 5.3 10.8 3.8 16.8-2.5 9.6-11.1 16.1-21 16.1-6 0-11.3-2.1-15.2-5.9-8-7.7-8.1-20.4-.3-28.4 3.8-4 8.8-6.2 13.9-6.2Z"
-          fill={`url(#${fruitGradientId})`}
+          d="M31.7 14.4c7.9 0 14.3 2.6 18.6 7.5 4.1 4.7 5.5 10.5 4.1 16.5-2.3 10-11 16.9-21.2 16.9-6.1 0-11.5-2.1-15.4-6-7.8-7.7-8-20.4-.4-28.4 3.9-4 8.9-6.5 14.3-6.5Z"
+          fill="#2D5B45"
         />
         <path
-          d="M31.4 14.1c1.6-5.4 5.4-9.2 11-11.1-.2 5.4-3.4 9.4-9.8 12.3l-1.2-1.2Z"
-          fill={`url(#${leafGradientId})`}
+          d="M31.4 14c2.1-5.3 5.9-8.9 11.3-10.6-.3 5.1-3.4 8.9-9.6 11.7L31.4 14Z"
+          fill="#8DB171"
         />
         <path
-          d="M20.6 37.8c4.2-5.7 9.7-8.5 16.4-8.5 3.8 0 7.4 1 10.8 2.9"
+          d="M21.1 37.9c4.2-5.4 9.6-8.1 16.1-8.1 3.9 0 7.3.9 10.5 2.8"
           fill="none"
-          stroke="#F6F1E8"
-          strokeWidth="2.4"
+          stroke="#F5EEE4"
+          strokeWidth="2.2"
           strokeLinecap="round"
         />
-        <circle cx="48.3" cy="31.8" r="4.2" fill="#D88947" />
+        <circle cx="47.8" cy="31.4" r="4" fill="#D88947" />
         <path
-          d="M32.3 14.5c8.1 0 14.6 2.6 18.8 7.6 4 4.7 5.3 10.8 3.8 16.8-2.5 9.6-11.1 16.1-21 16.1-6 0-11.3-2.1-15.2-5.9-8-7.7-8.1-20.4-.3-28.4 3.8-4 8.8-6.2 13.9-6.2Z"
+          d="M31.7 14.4c7.9 0 14.3 2.6 18.6 7.5 4.1 4.7 5.5 10.5 4.1 16.5-2.3 10-11 16.9-21.2 16.9-6.1 0-11.5-2.1-15.4-6-7.8-7.7-8-20.4-.4-28.4 3.9-4 8.9-6.5 14.3-6.5Z"
           fill="none"
-          stroke="rgba(22,44,33,.14)"
-          strokeWidth="1.5"
+          stroke="rgba(18,36,28,.14)"
+          strokeWidth="1.4"
         />
       </svg>
       <span className="brand-wordmark">

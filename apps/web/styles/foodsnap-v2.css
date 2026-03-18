@@ -44,22 +44,22 @@ nav{
   text-decoration:none;color:inherit;line-height:1;flex-shrink:0;
 }
 .brand-icon-svg{
-  width:36px;height:36px;display:block;flex-shrink:0;
-  filter:drop-shadow(0 10px 18px rgba(39,81,60,.14));
+  width:34px;height:34px;display:block;flex-shrink:0;
+  filter:drop-shadow(0 10px 16px rgba(39,81,60,.12));
 }
 .brand-wordmark{
   display:inline-flex;align-items:baseline;gap:0;
-  font-family:var(--font-b);font-size:1.5rem;letter-spacing:-.06em;line-height:.96;
+  font-family:var(--font-b);font-size:1.46rem;letter-spacing:-.065em;line-height:.96;
 }
 .brand-word{font-weight:800;color:#16261d}
 .brand-ai{
   font-weight:700;
-  color:#ca7a3c;
+  color:#c8793e;
 }
-.brand-footer .brand-icon-svg{width:32px;height:32px}
-.brand-footer .brand-wordmark{font-size:1.22rem}
-.brand-shell .brand-icon-svg{width:32px;height:32px}
-.brand-shell .brand-wordmark{font-size:1.22rem}
+.brand-footer .brand-icon-svg{width:30px;height:30px}
+.brand-footer .brand-wordmark{font-size:1.18rem}
+.brand-shell .brand-icon-svg{width:30px;height:30px}
+.brand-shell .brand-wordmark{font-size:1.18rem}
 .nav-links{display:flex;align-items:center;gap:4px}
 .nl{padding:8px 16px;color:var(--text2);text-decoration:none;font-size:.875rem;font-weight:500;border-radius:100px;transition:.2s}
 .nl:hover{color:var(--text);background:var(--cream2)}

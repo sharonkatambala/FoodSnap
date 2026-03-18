@@ -6,9 +6,9 @@ export const metadata = {
   title: "Lishe AI",
   description: "Take a photo of food and learn its nutrition with Lishe AI.",
   icons: {
-    icon: "/icon.svg?v=6",
-    shortcut: "/icon.svg?v=6",
-    apple: "/icon.svg?v=6"
+    icon: "/icon.svg?v=7",
+    shortcut: "/icon.svg?v=7",
+    apple: "/icon.svg?v=7"
   }
 };
 
