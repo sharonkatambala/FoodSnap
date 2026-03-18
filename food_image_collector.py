@@ -29,7 +29,7 @@ MAX_FILE_SIZE_MB = 10
 FOOD_CLASSES_PATH = Path("data/food_classes.json")
 HASH_CACHE_PATH = Path("data/image_hashes.json")
 
-st.title("FoodSnap Image Collection")
+st.title("Lishe AI Image Collection")
 st.write(
     "Upload or take a photo of your food and help build the world's biggest "
     "food image database!"
@@ -138,7 +138,7 @@ with st.form(key="image_metadata_submit_form", clear_on_submit=True):
     # Disclaimer
     st.info(
         '**Note:** If you click "upload image", your image will be stored on '
-        "FoodSnap servers and used to create the largest food image database "
+        "Lishe AI servers and used to create the largest food image database "
         "in the world! *(Do not upload anything sensitive, as it may one day "
         "become publicly available)*"
     )
@@ -146,7 +146,7 @@ with st.form(key="image_metadata_submit_form", clear_on_submit=True):
     # Submit button + logic
     submit_button = st.form_submit_button(
         label="Upload image",
-        help="Click to upload your image and label to FoodSnap servers",
+        help="Click to upload your image and label to Lishe AI servers",
     )
 
     if submit_button:
@@ -237,7 +237,7 @@ st.write("## FAQ")
 with st.expander("What happens to my image?"):
     st.write(
         """
-    When you click "upload image", your image gets stored on FoodSnap servers
+    When you click "upload image", your image gets stored on Lishe AI servers
          (a big hard drive on Google Cloud).
     Here's a picture which describes it in more detail:
     """
@@ -245,7 +245,7 @@ with st.expander("What happens to my image?"):
     st.image("./images/image-uploading-workflow-with-background.png")
     st.write(
         "Later on, images in the database will be used to train a computer "
-        "vision model to power FoodSnap."
+        "vision model to power Lishe AI."
     )
 with st.expander("Why do you need images of food?"):
     st.write(
@@ -253,7 +253,7 @@ with st.expander("Why do you need images of food?"):
     Machine learning models learn by looking at many different examples
         of things.
     Food included.
-    Eventually, FoodSnap wants to be an app you can use to *take a photo of
+    Eventually, Lishe AI wants to be an app you can use to *take a photo of
         food and learn about it*.
     To do so, we'll need many different examples of foods to build a
         computer vision

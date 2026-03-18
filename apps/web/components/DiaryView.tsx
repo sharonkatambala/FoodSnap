@@ -172,7 +172,7 @@ export default function DiaryView() {
 
       ctx.fillStyle = "#0f172a";
       ctx.font = "bold 36px 'Space Grotesk', sans-serif";
-      ctx.fillText("FoodSnap", 120, 440);
+      ctx.fillText("Lishe AI", 120, 440);
 
       ctx.font = "26px 'Space Grotesk', sans-serif";
       ctx.fillStyle = "#334155";
@@ -197,7 +197,7 @@ export default function DiaryView() {
         ctx.restore();
         drawCard();
         const link = document.createElement("a");
-        link.download = `foodsnap-${entry.food.replace(/\s+/g, "-").toLowerCase()}.png`;
+        link.download = `lishe-ai-${entry.food.replace(/\s+/g, "-").toLowerCase()}.png`;
         link.href = canvas.toDataURL("image/png");
         link.click();
       };
@@ -205,7 +205,7 @@ export default function DiaryView() {
     } else {
       drawCard();
       const link = document.createElement("a");
-      link.download = `foodsnap-${entry.food.replace(/\s+/g, "-").toLowerCase()}.png`;
+      link.download = `lishe-ai-${entry.food.replace(/\s+/g, "-").toLowerCase()}.png`;
       link.href = canvas.toDataURL("image/png");
       link.click();
     }
@@ -335,7 +335,7 @@ export default function DiaryView() {
         <div className="rounded-3xl border border-slate-200 bg-white p-6 text-sm text-slate-600 shadow-sm">
           <h3 className="font-semibold">Share your meals</h3>
           <p className="mt-2">
-            Use Export on any entry to create a shareable FoodSnap card with nutrition overlays.
+            Use Export on any entry to create a shareable Lishe AI card with nutrition overlays.
           </p>
         </div>
       </div>

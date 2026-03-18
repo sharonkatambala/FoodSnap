@@ -13,8 +13,8 @@ from supabase import create_client, Client
 
 MAX_FILE_SIZE_MB = 10
 
-st.set_page_config(page_title="FoodSnap Image Collector", page_icon="🍎")
-st.title("FoodSnap Image Collector")
+st.set_page_config(page_title="Lishe AI Image Collector", page_icon="🍓")
+st.title("Lishe AI Image Collector")
 st.write("Upload a food photo to help improve the model.")
 
 

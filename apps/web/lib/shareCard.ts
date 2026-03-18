@@ -59,7 +59,7 @@ export async function createShareCard(input: ShareCardInput) {
 
   ctx.fillStyle = "#2d7a4f";
   ctx.font = "700 34px 'Plus Jakarta Sans', sans-serif";
-  ctx.fillText("FoodSnap", 120, 840);
+  ctx.fillText("Lishe AI", 120, 840);
 
   ctx.fillStyle = "#1c1c1c";
   ctx.font = "600 28px 'Plus Jakarta Sans', sans-serif";
@@ -76,14 +76,14 @@ export async function createShareCard(input: ShareCardInput) {
 export async function shareOrDownloadCard(input: ShareCardInput) {
   const blob = await createShareCard(input);
   if (!blob) return;
-  const file = new File([blob], `foodsnap-${input.food.replace(/\s+/g, "-").toLowerCase()}.png`, {
+  const file = new File([blob], `lishe-ai-${input.food.replace(/\s+/g, "-").toLowerCase()}.png`, {
     type: "image/png"
   });
 
   if (navigator.share && navigator.canShare?.({ files: [file] })) {
     await navigator.share({
-      title: "FoodSnap",
-      text: `FoodSnap entry: ${input.food}`,
+      title: "Lishe AI",
+      text: `Lishe AI entry: ${input.food}`,
       files: [file]
     });
     return;

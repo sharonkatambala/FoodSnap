@@ -21,10 +21,10 @@ export default function SiteHeader({ className }: SiteHeaderProps) {
     >
       <div className="flex items-center gap-3">
         <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-500 text-2xl text-white shadow">
-          {"\u{1F34E}"}
+          {"\u{1F353}"}
         </span>
         <div>
-          <p className="text-sm font-semibold text-slate-900">FoodSnap</p>
+          <p className="text-sm font-semibold text-slate-900">Lishe AI</p>
           <p className="text-xs text-slate-500">Track meals, goals, and your Nutridex.</p>
         </div>
       </div>

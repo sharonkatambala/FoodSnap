@@ -12,8 +12,8 @@ export default function Page() {
         <a className="logo" href="#top">
           <span className="logo-icon" aria-hidden="true">{"\u{1F353}"}</span>
           <span className="logo-text">
-            <span className="logo-food">Food</span>
-            <span className="logo-snap">Snap</span>
+            <span className="logo-food">Lishe</span>
+            <span className="logo-snap">AI</span>
           </span>
         </a>
         <div className="nav-links">
@@ -24,7 +24,7 @@ export default function Page() {
           <a className="nl" href="#diary">Diary</a>
           <a className="nl" href="#features">Features</a>
         </div>
-        <a className="nav-cta" href="#scan">{"\u{1F4F7}"} Try FoodSnap</a>
+        <a className="nav-cta" href="#scan">{"\u{1F4F7}"} Try Lishe AI</a>
       </nav>
 
       <section className="hero" id="top">
@@ -46,7 +46,7 @@ export default function Page() {
             Track your whole <em>food intake</em> instantly.
           </h1>
           <p className="hero-sub">
-            FoodSnap combines on-device AI with nutrition data so you can identify foods, log meals,
+            Lishe AI combines on-device AI with nutrition data so you can identify foods, log meals,
             and build your Nutridex without friction.
           </p>
           <div className="hero-actions">
@@ -119,7 +119,7 @@ export default function Page() {
               <div className="feat-icon fi-p">{"\u2197"}</div>
               <div className="feat-title">Share Your Meals</div>
               <div className="feat-desc">
-                Export meals with FoodSnap overlays. Share to any platform with one tap.
+                Export meals with Lishe AI overlays. Share to any platform with one tap.
               </div>
             </div>
             <div className="feat">
@@ -164,7 +164,7 @@ export default function Page() {
             Your camera is the only tool you need to understand your nutrition. No account required
             to get started.
           </p>
-          <a href="#scan" className="btn-white">{"\u{1F4F7}"} Try FoodSnap Free</a>
+          <a href="#scan" className="btn-white">{"\u{1F4F7}"} Try Lishe AI Free</a>
         </div>
       </section>
 
@@ -174,11 +174,11 @@ export default function Page() {
             <a href="#" className="footer-logo">
               <span className="logo-icon footer-logo-icon" aria-hidden="true">{"\u{1F353}"}</span>
               <span className="logo-text footer-logo-text">
-                <span className="logo-food">Food</span>
-                <span className="logo-snap">Snap</span>
+                <span className="logo-food">Lishe</span>
+                <span className="logo-snap">AI</span>
               </span>
             </a>
-            <div className="footer-copy">© 2026 FoodSnap. AI-powered food intelligence.</div>
+            <div className="footer-copy">© 2026 Lishe AI. AI-powered food intelligence.</div>
           </div>
           <div className="footer-links">
             <a href="#" className="flink">Privacy</a>

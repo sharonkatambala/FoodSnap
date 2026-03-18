@@ -3,8 +3,8 @@ import "./../styles/foodsnap-v2.css";
 import Script from "next/script";
 
 export const metadata = {
-  title: "FoodSnap",
-  description: "Take a photo of food and learn its nutrition.",
+  title: "Lishe AI",
+  description: "Take a photo of food and learn its nutrition with Lishe AI.",
   icons: {
     icon: "/icon.svg?v=4",
     shortcut: "/icon.svg?v=4",
